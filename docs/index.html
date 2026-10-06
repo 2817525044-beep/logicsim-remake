@@ -2,13 +2,18 @@
    <html>
 
    <head>
+    <style>
+  body { background-color: #f4f4f9; font-family: '微软雅黑', sans-serif; padding: 20px; }
+  button { background-color: #007bff; color: white; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; }
+  input, textarea { border: 1px solid #ccc; border-radius: 4px; padding: 5px; }
+</style>
        <meta content="text/html;charset=utf-8" http-equiv="content-type" />
        <meta content="IE=edge" http-equiv="X-UA-Compatible" />
        <meta name="viewport" content="width=device-width, initial-scale=1" />
-       <link rel="stylesheet" type="text/css" href="lib/joint.css" />
-       <link href="lib/select2.min.css" rel="stylesheet" />
-       <link href="lib/w3.css" rel="stylesheet" />
-       <link rel="stylesheet" type="text/css" href="style.css" />
+       <link rel="stylesheet" type="text/css" href="./lib/joint.css" />
+       <link href="./lib/select2.min.css" rel="stylesheet" />
+       <link href="./lib/w3.css" rel="stylesheet" />
+       <link rel="stylesheet" type="text/css" href="./style.css" />
 
        <style>
            :root {
@@ -89,7 +94,7 @@
                        <div class="w3-row" style="margin:1px">
                            <div class="w3-third w3-btn w3-light-green  w3-hover-green"
                                style="position: relative;overflow: hidden;cursor:pointer">
-                               <img src="assets/icons/save2.svg" width="15" height="15" class="w3-margin-right" />
+                               <img src="./assets/icons/save2.svg" width="15" height="15" class="w3-margin-right" />
                                <span>载入文本</span>
                                <input type="file" style="position: absolute;
                                top: 0;
@@ -103,7 +108,7 @@
                            </div>
                            <button class="w3-third w3-btn w3-light-blue  w3-hover-blue"
  onclick="app.saveTextAsFile()"><img
-                                   src="assets/icons/upload.svg" width="15" height="15"
+                                   src="./assets/icons/upload.svg" width="15" height="15"
                                    class="w3-margin-right" />保存文本</button>
                            <input class="w3-third w3-input w3-center" id="inputFileNameToSaveAs" value="默认保存名称
  "></input>
@@ -146,12 +151,12 @@
                            <tr>
                                <td>
                                    <button id="LoadButton" class="w3-block w3-btn w3-light-green w3-hover-green"
-                                       onclick="app.load()"><img src="assets/icons/save2.svg" width="15" height="15"
+                                       onclick="app.load()"><img src="./assets/icons/save2.svg" width="15" height="15"
                                            class="w3-margin-right" />文本转图</button>
                                </td>
                                <td>
                                    <button id="SaveButton" class="w3-block w3-btn w3-light-blue  w3-hover-blue"
-                                       onclick="app.save()"><img src="assets/icons/upload.svg" width="15" height="15"
+                                       onclick="app.save()"><img src="./assets/icons/upload.svg" width="15" height="15"
                                            class="w3-margin-right" />图转文本</button>
                                </td>
                            </tr>
